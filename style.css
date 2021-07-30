@@ -60,7 +60,7 @@ form input[type="submit"]{
     color: white;
     background: linear-gradient(to right, #8d1638, #a32347);
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 580;
     transition: all 0.4s ease;
 }
@@ -69,35 +69,63 @@ form input[type="submit"]:hover{
     letter-spacing: 0.1rem;
 }
 
-footer{
+form .input-field:first-child{
+    margin-bottom: 2rem;
+}
+
+.input-field .underline{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.footer{
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
 }
 
-footer span{
+.footer span{
     margin-bottom: 1rem;
     text-align: center;
     font-size: 1.2rem;
 }
 
-.social-fields{
-     width: 100%;
-     cursor: pointer;
-     border-radius: 20px;
+.footer .social-fields{
+    width: 100%;
+    cursor: pointer;
 }
 
-.social-fields a{
+.footer .social-fields a{
     text-decoration: none;
     color: white;
+    font-size: 0.8rem;
 }
 
-.social-field-twitter{
+.footer .social-fields a i {
+   margin: 0 0.5rem;
+   width: 0.8rem;
+}
+
+.footer .social-field-twitter{
     background: linear-gradient(to right, #1DA1F2, #6fc6fc);
+    margin: 1rem 0 1rem 0;
+    border-radius: 0.2rem;
 }
-.social-field-facebook{
+.footer .social-field-facebook{
     background: linear-gradient(to right, #34528f, #5176c0);
+    margin: 1rem 0 1rem 0;
+    border-radius: 0.2rem;
 }
-.social-field-google{
+.footer .social-field-google{
     background: linear-gradient(to right, #c03c30, #fc5040);
+    margin: 1rem 0 1rem 0;
+    border-radius: 0.2rem;
 }
