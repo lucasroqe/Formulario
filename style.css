@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, #a4133c, #c9184a, #ff758f);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container{
+    background-color: #fff0f3;
+    max-width: 20vw;
+    min-height: 50vh;
+    padding: 3rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem;
+}
+
+main h2{
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.input-field{
+    position: relative;
+}
+
+.input-field input{
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    background-color: #fff0f3;
+}
+
+.input-field input::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+form input[type="submit"]{
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    color: white;
+    background: linear-gradient(to right, #8d1638, #a32347);
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 580;
+    transition: all 0.4s ease;
+}
+
+form input[type="submit"]:hover{
+    letter-spacing: 0.1rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+footer span{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.social-fields{
+     width: 100%;
+     cursor: pointer;
+     border-radius: 20px;
+}
+
+.social-fields a{
+    text-decoration: none;
+    color: white;
+}
+
+.social-field-twitter{
+    background: linear-gradient(to right, #1DA1F2, #6fc6fc);
+}
+.social-field-facebook{
+    background: linear-gradient(to right, #34528f, #5176c0);
+}
+.social-field-google{
+    background: linear-gradient(to right, #c03c30, #fc5040);
+}
